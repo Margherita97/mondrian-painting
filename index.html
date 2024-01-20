@@ -6,12 +6,37 @@
     <title>Mondrian painting</title>
     <style>
         body {
+            height: 100vh;
             display: flex;
             align-items: center;
-            flex-direction: center;
+            justify-content: center;
             margin: 0;
             padding: 0;
         }
+
+        .container {
+            background-color: #000;
+            display: grid;
+            grid-template-columns: 200px 80px 170px 50px;
+            grid-template-rows: 40px 50px 33px 20px 63px 100px;
+            gap: 5px;
+        }
+
+        .red1 {
+            background-color: #E72F24;
+            grid-row: span 5;
+        }
+
+        .yellow1 {
+            background-color: #F9D01E;
+            grid-area: 1 / 2 / 2 / 3;
+        }
+
+        .white1 {
+            background-color: #F0F1EC;
+            grid-row: span 3;
+        }
+
     </style>
   </head>
   <body>
